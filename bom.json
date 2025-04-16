@@ -1,0 +1,5 @@
+[
+  { "Position": 1, "Bauteil": "Grundplatte", "Material": "Aluminium", "Menge": 1 },
+  { "Position": 2, "Bauteil": "Seitenteil", "Material": "Stahl", "Menge": 2 },
+  { "Position": 3, "Bauteil": "Schraube M4", "Material": "Edelstahl", "Menge": 6 }
+]
