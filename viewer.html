@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Stückliste</title></head>
+<body>
+  <h2>Digitale Stückliste</h2>
+  <ul id="bomList"></ul>
+  <script>
+    fetch('bom.json')
+      .then(response => response.json())
+      .then(data => {
+        const list = document.getElementById('bomList');
+        data.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = `Pos ${item.Position}: ${item.Bauteil} (${item.Material}), Menge: ${item.Menge}`;
+          list.appendChild(li);
+        });
+      });
+  </script>
+</body>
+</html>
